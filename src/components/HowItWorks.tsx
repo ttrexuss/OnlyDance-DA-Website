@@ -2,12 +2,6 @@ import {Smartphone, Trophy, Footprints} from 'lucide-react';
 import {FootTrackerIcon} from '../utils/icons';
 
 function HowItWorks() {
-    const steps = [
-        {number: '1', text: 'Scan dance & load overlay', icon: Smartphone},
-        {number: '2', text: 'AR mirrors real-time movements', icon: Trophy},
-        {number: '3', text: 'Get instant corrections', icon: Trophy},
-        {number: '4', text: 'Track feet precisely', icon: Footprints},
-    ];
 
     return (
         <section id="how-it-works" className="py-20 bg-white opacity-0">
@@ -27,7 +21,7 @@ function HowItWorks() {
                         className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#5E1ABD]/20 bg-gradient-to-br from-[#5E1ABD]/5 to-white p-8 hover:shadow-2xl transition-all duration-300">
                         <div className="flex items-center gap-3 mb-6">
                             <Smartphone className="text-[#5E1ABD]" size={32}/>
-                            <h3 className="text-2xl font-semibold text-[#5E1ABD]">AR App</h3>
+                            <h3 className="text-2xl font-semibold text-[#5E1ABD]">AR-App</h3>
                         </div>
 
                         <div className="relative aspect-video rounded-2xl overflow-hidden mb-6">
@@ -48,7 +42,7 @@ function HowItWorks() {
                         className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#507D21]/20 bg-gradient-to-br from-[#507D21]/5 to-white p-8 hover:shadow-2xl transition-all duration-300">
                         <div className="flex items-center gap-3 mb-6">
                             <Footprints className="text-[#507D21]" size={32}/>
-                            <h3 className="text-2xl font-semibold text-[#507D21]">Feet Trackers</h3>
+                            <h3 className="text-2xl font-semibold text-[#507D21]">Live-Trackers</h3>
                         </div>
 
                         <div className="relative aspect-video rounded-2xl overflow-hidden mb-6">
