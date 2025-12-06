@@ -19,6 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* In index.css – ersetze deinen alten Block durch diesen */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -30,8 +31,11 @@ html {
   }
 }
 
-.fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
+/* ALLE SECTIONS ANIMIEREN AUTOMATISCH – OHNE OBSERVER */
+section {
+  opacity: 0;
+  animation: fadeInUp 0.9s ease-out forwards;
+  animation-delay: 0.1s;
 }
 
 .animate-float {

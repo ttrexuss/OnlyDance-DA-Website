@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
@@ -18,7 +19,7 @@ function CookieBanner() {
 
   if (!visible) return null;
 
-  return (
+  return ({/*
     <div className="fixed bottom-0 left-0 right-0 bg-gray-900 text-white p-4 shadow-2xl z-50 animate-slide-up">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm">
@@ -41,6 +42,7 @@ function CookieBanner() {
         </div>
       </div>
     </div>
+    */}
   );
 }
 

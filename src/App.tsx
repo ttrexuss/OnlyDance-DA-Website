@@ -1,47 +1,39 @@
-import { useState, useEffect } from 'react';
-import { Menu, X, Play } from 'lucide-react';
+// src/App.tsx
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import HowItWorks from './components/HowItWorks';
-import Team from './components/Team';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CookieBanner from './components/CookieBanner';
 
+import Home from './pages/Home';
+import Team from './pages/Team';
+import Contact from './pages/Contact';
+import ArApp from './pages/ArApp';
+import Trackers from './pages/Trackers';
+import About from './pages/About';
+
 function App() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const observerCallback = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('fade-in-up');
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(observerCallback, {
-      threshold: 0.1,
-    });
-
-    document.querySelectorAll('section').forEach((section) => {
-      observer.observe(section);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div className="min-h-screen bg-white">
-      <Navigation mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
-      <Hero />
-      <HowItWorks />
-      <Team />
-      <Contact />
-      <Footer />
-      <CookieBanner />
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div className="min-h-screen flex flex-col bg-white">
+                <Navigation mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} />
+                <main className="flex-1">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/team" element={<Team />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/ar-app" element={<ArApp />} />
+                        <Route path="/trackers" element={<Trackers />} />
+                        <Route path="/about" element={<About />} />
+                    </Routes>
+                </main>
+                <Footer />
+                <CookieBanner />
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
