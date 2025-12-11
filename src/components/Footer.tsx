@@ -14,9 +14,11 @@ function Footer() {
               <h3 className="text-lg font-semibold mb-5">Quick Links</h3>
               <ul className="space-y-3 text-sm">
                 <li><a href="#home" className="text-gray-400 hover:text-[#D37466] transition">Home</a></li>
-                <li><a href="#how-it-works" className="text-gray-400 hover:text-[#D37466] transition">How It Works</a></li>
-                <li><a href="#team" className="text-gray-400 hover:text-[#D37466] transition">Team</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-[#D37466] transition">Contact</a></li>
+                <li><a href="/ar-app" className="text-gray-400 hover:text-[#D37466] transition">AR-App</a></li>
+                <li><a href="/trackers" className="text-gray-400 hover:text-[#D37466] transition">Tracker</a></li>
+                <li><a href="/team" className="text-gray-400 hover:text-[#D37466] transition">Team</a></li>
+                <li><a href="/about" className="text-gray-400 hover:text-[#D37466] transition">About</a></li>
+                <li><a href="/contact" className="text-gray-400 hover:text-[#D37466] transition">Contact</a></li>
               </ul>
             </div>
 

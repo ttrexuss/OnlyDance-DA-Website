@@ -11,7 +11,7 @@ function ArApp() {
             <ARAppDetails/>
             {/*
             <DownloadSection/>
-           
+
             */}
         </>
     );
