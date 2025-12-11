@@ -41,7 +41,7 @@ export default function DownloadSection() {
                         className="block hover:scale-[1.03] transition-transform duration-300"
                     >
                         <img
-                            src="/GetItOnGooglePlay_Badge_Web_color_German.png"
+                            src="GetItOnGooglePlay_Badge_Web_color_German.png"
                             alt="Laden Sie es im Google Play Store herunter"
                             className="h-14 drop-shadow-md"
                         />

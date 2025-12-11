@@ -9,9 +9,9 @@ function ArApp() {
             <div className="pt-24 md:pt-10"/>
 
             <ARAppDetails/>
-
-            <DownloadSection/>
             {/*
+            <DownloadSection/>
+           
             */}
         </>
     );
