@@ -1,8 +1,8 @@
 import {Smartphone, Trophy, Footprints} from 'lucide-react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {FootTrackerIcon} from '../utils/icons';
 
-function HowItWorks() {
+function DanceLikeNeverBefore() {
 
     return (
         <section id="how-it-works" className="py-20 bg-white opacity-0">
@@ -18,9 +18,10 @@ function HowItWorks() {
                 <div className="grid md:grid-cols-2 gap-12 mb-16">
 
                     {/* AR App – jetzt mit "Mehr erfahren"-Button */}
-                    <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#5E1ABD]/20 bg-gradient-to-white p-8 hover:shadow-2xl transition-all duration-300">
+                    <div
+                        className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#5E1ABD]/20 bg-gradient-to-white p-8 hover:shadow-2xl transition-all duration-300">
                         <div className="flex items-center gap-3 mb-6">
-                            <Smartphone className="text-[#5E1ABD]" size={32} />
+                            <Smartphone className="text-[#5E1ABD]" size={32}/>
                             <h3 className="text-2xl font-semibold text-[#5E1ABD]">AR App</h3>
                         </div>
 
@@ -28,7 +29,7 @@ function HowItWorks() {
                             <img
                                 src="/ar-app/praxisTanzIphoneMockup-schatten.png"
                                 alt="OnlyDance AR App"
-                                className="absolute inset-0 w-full h-full object-cover object-center scale-140 hover:scale-160 transition-transform duration-500"
+                                className="absolute inset-0 w-full h-full object-cover object-center scale-140 hover:scale-105 transition-transform duration-500"
                             />
                         </div>
 
@@ -47,22 +48,25 @@ function HowItWorks() {
                     </div>
 
                     {/* Feet Trackers – jetzt mit "Mehr erfahren"-Button */}
-                    <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#507D21]/20 bg-gradient-to-br from-[#507D21]/5 to-white p-8 hover:shadow-2xl transition-all duration-300">
+                    <div
+                        className="rounded-3xl overflow-hidden shadow-xl border-4 border-[#507D21]/20 bg-gradient-to-br from-[#507D21]/5 to-white p-8 hover:shadow-2xl transition-all duration-300">
                         <div className="flex items-center gap-3 mb-6">
-                            <Footprints className="text-[#507D21]" size={32} />
+                            <Footprints className="text-[#507D21]" size={32}/>
                             <h3 className="text-2xl font-semibold text-[#507D21]">Feet Trackers</h3>
                         </div>
 
-                        <div className="relative aspect-video rounded-2xl overflow-hidden mb-6">
+                        <div className="relative rounded-2xl overflow-hidden mb-6">
                             <img
                                 src="/tracking/trackerSchuh-ausgeschnitten-schatten.png"
-                                alt="OnlyDance Fuß-Tracker"
-                                className="absolute inset-0 w-full h-full object-cover object-center scale-150 hover:scale-160 transition-transform duration-500"
+                                alt="CityDance Fuß-Tracker"
+                                className="block mx-auto max-h-64 w-auto hover:scale-105 transition-transform duration-500"
                             />
                         </div>
 
+
                         <p className="text-base leading-relaxed text-gray-700 mb-8">
-                            Präzise Fußsensoren messen jeden Schritt – verfolgen die genaue Fußpositionierung um ein perfektes Feedback zu geben!
+                            Präzise Fußsensoren messen jeden Schritt – verfolgen die genaue Fußpositionierung um ein
+                            perfektes Feedback zu geben!
                         </p>
 
                         <div className="text-center">
@@ -78,10 +82,11 @@ function HowItWorks() {
                 </div>
 
                 {/* Neuer 3-Schritte-Block */}
-                <div className="bg-gradient-to-r from-[#5E1ABD]/5 via-[#D37466]/5 to-[#507D21]/5 rounded-3xl p-8 md:p-12 border border-[#5E1ABD]/10 mt-20">
+                <div
+                    className="bg-gradient-to-r from-[#5E1ABD]/5 via-[#D37466]/5 to-[#507D21]/5 rounded-3xl p-8 md:p-12 border border-[#5E1ABD]/10 mt-20">
                     <h3
                         className="text-2xl md:text-3xl font-semibold text-center mb-12 text-[#5E1ABD]"
-                        style={{ fontFamily: "'Montserrat Alternatives', 'Montserrat', sans-serif" }}
+                        style={{fontFamily: "'Montserrat Alternatives', 'Montserrat', sans-serif"}}
                     >
                         Dein Weg zum Tanzprofi – in nur 3 Schritten
                     </h3>
@@ -89,29 +94,35 @@ function HowItWorks() {
                     <div className="grid md:grid-cols-3 gap-8">
                         {/* Schritt 1 – Lila */}
                         <div className="flex flex-col items-center text-center group">
-                            <div className="w-20 h-20 rounded-full bg-[#5E1ABD] flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <Smartphone size={44} className="text-white" />
+                            <div
+                                className="w-20 h-20 rounded-full bg-[#5E1ABD] flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <Smartphone size={44} className="text-white"/>
                             </div>
                             <p className="text-xl font-semibold text-[#5E1ABD] mb-2">1. AR-App starten</p>
-                            <p className="text-gray-700">Schritte nachtanzen mit visuellen Overlays – einfach & intuitiv</p>
+                            <p className="text-gray-700">Schritte nachtanzen mit visuellen Overlays – einfach &
+                                intuitiv</p>
                         </div>
 
                         {/* Schritt 2 – Orange */}
                         <div className="flex flex-col items-center text-center group">
-                            <div className="w-20 h-20 rounded-full bg-[#D37466] flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <Footprints size={44} className="text-white" />
+                            <div
+                                className="w-20 h-20 rounded-full bg-[#D37466] flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <Footprints size={44} className="text-white"/>
                             </div>
                             <p className="text-xl font-semibold text-[#D37466] mb-2">2. Live-Feedback</p>
-                            <p className="text-gray-700">Unsere Tracker geben dir sofortiges Feedback zu jedem Schritt</p>
+                            <p className="text-gray-700">Unsere Tracker geben dir sofortiges Feedback zu jedem
+                                Schritt</p>
                         </div>
 
                         {/* Schritt 3 – Grün */}
                         <div className="flex flex-col items-center text-center group">
-                            <div className="w-20 h-20 rounded-full bg-[#507D21] flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <Trophy size={44} className="text-white" />
+                            <div
+                                className="w-20 h-20 rounded-full bg-[#507D21] flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <Trophy size={44} className="text-white"/>
                             </div>
                             <p className="text-xl font-semibold text-[#507D21] mb-2">3. Ready für die Bühne</p>
-                            <p className="text-gray-700">Perfekt vorbereitet für die nächste Tanzstunde oder den großen Auftritt</p>
+                            <p className="text-gray-700">Perfekt vorbereitet für die nächste Tanzstunde oder den großen
+                                Auftritt</p>
                         </div>
                     </div>
                 </div>
@@ -132,4 +143,4 @@ function HowItWorks() {
     );
 }
 
-export default HowItWorks;
+export default DanceLikeNeverBefore;

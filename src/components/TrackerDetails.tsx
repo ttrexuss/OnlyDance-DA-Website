@@ -22,6 +22,16 @@ function TrackerDetails() {
                         alt="Fuß-Tracker Detail"
                         className="absolute inset-0 w-full h-full object-cover scale-110"
                     />
+
+                    {/*
+                    <div className="relative rounded-2xl overflow-hidden mb-6">
+                        <img
+                            src="/tracking/trackerSchuh-ausgeschnitten-schatten.png"
+                            alt="CityDance Fuß-Tracker"
+                            className="block mx-auto max-h-64 w-auto"
+                        />
+                    </div>
+                    */}
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8 mt-12">
@@ -30,7 +40,7 @@ function TrackerDetails() {
                         <Footprints size={40} className="text-[#507D21] mb-4" />
                         <h3 className="text-2xl font-semibold text-[#507D21] mb-3">Präzise Sensorik</h3>
                         <p className="text-gray-700">
-                            Erfasst Druck, Position und Winkel – millimetergenau wie in einem Tanzstudio.
+                            Erfasst Druck, Position und Winkel – centimetergenau wie in einem Tanzstudio.
                         </p>
                     </div>
 

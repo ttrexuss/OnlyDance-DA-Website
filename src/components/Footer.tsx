@@ -62,7 +62,7 @@ function Footer() {
           {/* Copyright */}
           <div className="text-center pt-8 border-t border-gray-800">
             <p className="text-gray-500 text-xs">
-              © {new Date().getFullYear()} OnlyDance. All rights reserved.<br className="sm:hidden" />
+              © {new Date().getFullYear()} OnlyDance. All rights reserved. <br className="sm:hidden" />
               Dance with purpose, learn with passion.
             </p>
           </div>
