@@ -30,7 +30,6 @@ function App() {
                     </Routes>
                 </main>
                 <Footer />
-                <CookieBanner />
             </div>
         </BrowserRouter>
     );
