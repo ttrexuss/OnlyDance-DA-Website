@@ -106,13 +106,11 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }: { mobi
                 ))}
 
                 {/* Anmelden im Mobile Menu */}
-                <Link
-                    to="/login"
-                    onClick={() => setMobileMenuOpen(false)}
+                  <button onClick={() => (window.location.href = "/login")}
                     className="block w-full text-center text-[#5E1ABD] font-bold py-3 border-2 border-[#5E1ABD] rounded-xl hover:bg-[#5E1ABD]/10 transition"
                 >
                   Anmelden
-                </Link>
+                </button>
 
                 {/* Socials im Mobile Menu */}
                 <div className="flex justify-center gap-8 pt-5 border-t border-gray-100">

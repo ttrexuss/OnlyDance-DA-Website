@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
-import CookieBanner from './components/CookieBanner';
 
 import Home from './pages/Home';
 import Team from './pages/Team';
@@ -11,6 +10,7 @@ import Contact from './pages/Contact';
 import ArApp from './pages/ArApp';
 import Trackers from './pages/Trackers';
 import About from './pages/About';
+import Login from './pages/Login';
 
 function App() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,6 +27,7 @@ function App() {
                         <Route path="/ar-app" element={<ArApp />} />
                         <Route path="/trackers" element={<Trackers />} />
                         <Route path="/about" element={<About />} />
+                        <Route path="/login" element={<Login />} />
                     </Routes>
                 </main>
                 <Footer />

@@ -20,7 +20,7 @@ function AboutComponent() {
                         className="text-4xl md:text-3xl font-medium text-left mb-4"
                         style={{ fontFamily: "'Montserrat Alternatives', 'Montserrat', sans-serif", color: '#5E1ABD' }}
                     >
-                        Was steckt hinter OnlyDnace?
+                        Was steckt hinter OnlyDance?
                     </h2>
 
                     <p className="text-gray-700 text-lg leading-relaxed mb-8">
