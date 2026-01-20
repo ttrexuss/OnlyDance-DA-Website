@@ -33,7 +33,7 @@ function ARAppDetails() {
                         <Smartphone className="text-[#5E1ABD] mb-4" size={40} />
                         <h3 className="text-2xl text-[#5E1ABD] font-semibold mb-3">Live AR Overlays</h3>
                         <p className="text-gray-700">
-                            Zeigt Fußpositionen, Bewegungsbahnen und Takt direkt in Echtzeit an – perfekt für Lernende.
+                            Zeigt Fußpositionen, Bewegungsbahnen direkt in Echtzeit an.
                         </p>
                     </div>
 
@@ -41,7 +41,7 @@ function ARAppDetails() {
                         <Sparkles className="text-[#D37466] mb-4" size={40} />
                         <h3 className="text-2xl text-[#D37466] font-semibold mb-3">Smart Coaching</h3>
                         <p className="text-gray-700">
-                            KI analysiert deine Schritte und gibt Tipps zur Haltung & Bewegungsausführung.
+                            Durch Takt und Musik kann man es perfektionieren.
                         </p>
                     </div>
 

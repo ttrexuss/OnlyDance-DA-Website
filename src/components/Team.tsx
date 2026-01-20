@@ -2,27 +2,27 @@ function Team() {
     const members = [
         {
             name: 'Erik Weidenauer',
-            role: 'AR-Pionier',
+            role: 'Projektmitglied',
             responsibility: 'AR-App & Pose-Erkennung',
-            quote: 'Ich verwandle deine Moves in magische Augmented Reality.',
-            bio: 'Computer-Vision-Experte und Kopf hinter unserer Echtzeit-Pose-Erkennung. Er verwandelt jede Körperbewegung in sofortiges, präzises AR-Feedback – so flüssig und direkt, dass es sich anfühlt wie Zauberei.',
+            quote: 'Augmented Reality sollte für alle möglich sein.',
+            bio: 'Ich bin der Programmierer der AR-App und kümmere mich darum, dass ihr das beste Erlebnis in der App habt.',
             color: '#5E1ABD',
             photo: '/team/erik-01.JPG',          // Achtung: Pfad mit führendem Slash und klein geschrieben
             focus: '50% 20%',
         },
         {
             name: 'Andreas Juchelka',
-            role: 'Hardware-Held',
+            role: 'Scrum-Master',
             responsibility: 'Tracking-System',
             quote: 'Präzision, Schritt für Schritt.',
-            bio: 'Hardware-Ingenieur und Entwickler unserer fußspezifischen Motion-Tracker. Spezialist für Sensor-Fusion und Positionierungssysteme, die jeden Tanzschritt zentimetergenau erfassen – für perfekte Genauigkeit bei jedem Move.',
+            bio: 'Entwickler von unserem Live-Tracker. Ein Spezialist für die Sensoren und Positionierung, die jeden Tanzschritt zentimetergenau erfassen – für perfekte Genauigkeit bei jedem Move.',
             color: '#507D21',
             photo: '/team/andi-01.JPG',
             focus: '50% 30%',
         },
         {
             name: 'Jakob Heftner',
-            role: 'Design-Maestro',
+            role: 'Projektleiter',
             responsibility: 'Design, Website & Social Media',
             quote: 'Ich erschaffe den Vibe, der OnlyDance vibrieren lässt.',
             bio: 'Design-Visionär, der elegante AR-Erlebnisse erschafft, die sich natürlich und intuitiv anfühlen. Leidenschaftlich darin, Technologie und Kunst zu verbinden – damit Tanzen lernen nicht nur funktioniert, sondern wunderschön ist.',

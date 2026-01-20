@@ -1,4 +1,4 @@
-import { Footprints, Gauge, Bluetooth } from "lucide-react";
+import { Footprints, Gauge, Wifi } from "lucide-react";
 
 function TrackerDetails() {
     return (
@@ -22,16 +22,6 @@ function TrackerDetails() {
                         alt="Fuß-Tracker Detail"
                         className="absolute inset-0 w-full h-full object-cover scale-110"
                     />
-
-                    {/*
-                    <div className="relative rounded-2xl overflow-hidden mb-6">
-                        <img
-                            src="/tracking/trackerSchuh-ausgeschnitten-schatten.png"
-                            alt="CityDance Fuß-Tracker"
-                            className="block mx-auto max-h-64 w-auto"
-                        />
-                    </div>
-                    */}
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8 mt-12">
@@ -40,7 +30,7 @@ function TrackerDetails() {
                         <Footprints size={40} className="text-[#507D21] mb-4" />
                         <h3 className="text-2xl font-semibold text-[#507D21] mb-3">Präzise Sensorik</h3>
                         <p className="text-gray-700">
-                            Erfasst Druck, Position und Winkel – centimetergenau wie in einem Tanzstudio.
+                            Erfasst Druck, Position und Winkel – millimetergenau wie in einem Tanzstudio.
                         </p>
                     </div>
 
@@ -53,7 +43,7 @@ function TrackerDetails() {
                     </div>
 
                     <div className="rounded-3xl p-8 border-2 border-[#507D21]/20 shadow-xl hover:shadow-2xl transition-all">
-                        <Bluetooth size={40} className="text-[#5E1ABD] mb-4" />
+                        <Wifi size={40} className="text-[#5E1ABD] mb-4" />
                         <h3 className="text-2xl font-semibold text-[#5E1ABD] mb-3">Kabellos & robust</h3>
                         <p className="text-gray-700">
                             Lange Akkulaufzeit, ultraleicht & zuverlässige Verbindung zur App.
