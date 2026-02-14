@@ -22,7 +22,7 @@ function Team() {
         },
         {
             name: 'Jakob Heftner',
-            role: 'Projektleiter',
+            role: 'Product Owner',
             responsibility: 'Design, Website & Social Media',
             quote: 'Ich erschaffe den Vibe, der OnlyDance vibrieren lässt.',
             bio: 'Design-Visionär, der elegante AR-Erlebnisse erschafft, die sich natürlich und intuitiv anfühlen. Leidenschaftlich darin, Technologie und Kunst zu verbinden – damit Tanzen lernen nicht nur funktioniert, sondern wunderschön ist.',
