@@ -1,5 +1,7 @@
 import Logo from './Logo';
 import { TikTokIcon, InstagramIcon, YoutubeIcon } from '../utils/icons';
+import HosttechLogo from "../utils/hosttech-RGB-weiss.png";
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -13,31 +15,57 @@ function Footer() {
             <div className="text-center md:text-left">
               <h3 className="text-lg font-semibold mb-5">Quick Links</h3>
               <ul className="space-y-3 text-sm">
-                <li><a href="#home" className="text-gray-400 hover:text-[#D37466] transition">Home</a></li>
-                <li><a href="/ar-app" className="text-gray-400 hover:text-[#D37466] transition">AR-App</a></li>
-                <li><a href="/trackers" className="text-gray-400 hover:text-[#D37466] transition">Tracker</a></li>
-                <li><a href="/team" className="text-gray-400 hover:text-[#D37466] transition">Team</a></li>
-                <li><a href="/about" className="text-gray-400 hover:text-[#D37466] transition">About</a></li>
-                <li><a href="/contact" className="text-gray-400 hover:text-[#D37466] transition">Contact</a></li>
+                <li><Link to="/" className="text-gray-400 hover:text-[#D37466] transition">Home</Link></li>
+                <li><Link to="/ar-app" className="text-gray-400 hover:text-[#D37466] transition">AR-App</Link></li>
+                <li><Link to="/trackers" className="text-gray-400 hover:text-[#D37466] transition">Tracker</Link></li>
+                <li><Link to="/team" className="text-gray-400 hover:text-[#D37466] transition">Team</Link></li>
+                <li><Link to="/about" className="text-gray-400 hover:text-[#D37466] transition">About</Link></li>
+                <li><Link to="/contact" className="text-gray-400 hover:text-[#D37466] transition">Contact</Link></li>
               </ul>
             </div>
 
             {/* Follow Us – jetzt mittig */}
             <div className="text-center">
               <h3 className="text-lg font-semibold mb-5">Follow Us</h3>
-              <div className="flex justify-center gap-5 mb-6">
-                <a href="https://www.instagram.com/onlydance.htl3r/" target="_blank" rel="noopener noreferrer"
-                   className="bg-gray-800 p-4 rounded-full hover:bg-[#D37466] transition-all hover:scale-110">
+
+              <div className="flex justify-center gap-5 mb-8">
+                <a
+                    href="https://www.instagram.com/onlydance.htl3r/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 p-4 rounded-full hover:bg-[#D37466] transition-all hover:scale-110"
+                >
                   <InstagramIcon size={26} fill="white" />
                 </a>
-                <a href="https://www.tiktok.com/@onlydance.htl3r" target="_blank" rel="noopener noreferrer"
-                   className="bg-gray-800 p-4 rounded-full hover:bg-[#5E1ABD] transition-all hover:scale-110">
+                <a
+                    href="https://www.tiktok.com/@onlydance.htl3r"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 p-4 rounded-full hover:bg-[#5E1ABD] transition-all hover:scale-110"
+                >
                   <TikTokIcon size={26} fill="white" />
                 </a>
-                <a href="https://www.youtube.com/@OnlyDance.htl3r" target="_blank" rel="noopener noreferrer"
-                   className="bg-gray-800 p-4 rounded-full hover:bg-red-600 transition-all hover:scale-110">
+                <a
+                    href="https://www.youtube.com/@OnlyDance.htl3r"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 p-4 rounded-full hover:bg-red-600 transition-all hover:scale-110"
+                >
                   <YoutubeIcon size={26} fill="white" />
                 </a>
+              </div>
+
+              {/* Sponsor Bereich */}
+              <h4 className="text-lg font-semibold mb-1">
+                Sponsor
+              </h4>
+
+              <div className="flex justify-center">
+                <img
+                    src={HosttechLogo}
+                    alt="Hosttech Sponsor Logo"
+                    className="h-12 w-auto opacity-80 hover:opacity-100 transition-all duration-300"
+                />
               </div>
             </div>
 

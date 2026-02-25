@@ -16,11 +16,11 @@ function TrackerDetails() {
                 </h2>
                 <div className="w-24 h-1 bg-gradient-to-r from-[#5E1ABD] to-[#D37466] mx-auto mb-16 rounded-full" />
 
-                <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-[#507D21]/20 mb-12">
+                <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-[#507D21]/20 mb-12 bg-white">
                     <img
                         src="/tracking/trackerSchuh-ausgeschnitten-schatten.png"
                         alt="Fuß-Tracker Detail"
-                        className="absolute inset-0 w-full h-full object-cover scale-110"
+                        className="absolute inset-0 w-full h-full object-contain"
                     />
                 </div>
 
