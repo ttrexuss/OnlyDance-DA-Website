@@ -1,4 +1,6 @@
 // src/components/DownloadSection.tsx
+import {Link} from "react-router-dom";
+
 export default function DownloadSection() {
     return (
         <section className="py-20 bg-gradient-to-b from-white to-[#5E1ABD]/5">
@@ -13,13 +15,24 @@ export default function DownloadSection() {
                 <div className="w-24 h-1 bg-gradient-to-r from-[#5E1ABD] to-[#D37466] mx-auto mb-12 rounded-full" />
 
                 <p className="text-xl text-gray-700 mb-16 max-w-2xl mx-auto">
-                    Die OnlyDance App kommt bald – sei einer der Ersten!
+                    Die OnlyDance App ist jetzt auf GitHub verfügbar!
                 </p>
+                <div className="text-center">
+                    <a
+                        href="https://github.com/WeidenauerErik/OnlyDance-AR-Unity/tree/main#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-[#5E1ABD] text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-[#D37466] transition-all hover:scale-105 shadow-xl"
+                    >
+                        Zum Download ↓
+                    </a>
+                </div>
+
 
                 {/* OFFIZIELLE BADGES – 100 % Styleguide-konform */}
+                {/*}
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12">
 
-                    {/* Apple */}
                     <a
                         href=""
                         target="_blank"
@@ -33,7 +46,6 @@ export default function DownloadSection() {
                         />
                     </a>
 
-                    {/* Google */}
                     <a
                         href=""
                         target="_blank"
@@ -48,10 +60,8 @@ export default function DownloadSection() {
                     </a>
 
                 </div>
+                */}
 
-                <p className="mt-16 text-lg text-gray-600">
-                    <span className="text-[#D37466] font-medium">Early Access ab Q1 2026</span>
-                </p>
 
             </div>
         </section>
